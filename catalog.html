@@ -31,15 +31,15 @@
                     </legend>
                     <ul>
                         <li>
-                            <input type="checkbox" name="services" id="filter-pool" checked>
+                            <input type="checkbox" name="pool" id="filter-pool" checked>
                             <label for="filter-pool">Бассейн</label>
                         </li>
                         <li>
-                            <input type="checkbox" name="services" id="filter-parking">
+                            <input type="checkbox" name="parking" id="filter-parking">
                             <label for="filter-parking">Парковка</label>
                         </li>
                         <li>
-                            <input type="checkbox" name="services" id="filter-wifi">
+                            <input type="checkbox" name="wifi" id="filter-wifi">
                             <label for="filter-wifi">Wi-Fi</label>
                         </li>
                     </ul>
@@ -50,23 +50,23 @@
                     </legend>
                     <ul>
                         <li>
-                            <input type="checkbox" name="types" id="filter-hotel" checked>
+                            <input type="checkbox" name="hotel" id="filter-hotel" checked>
                             <label for="filter-hotel">Гостиница</label>
                         </li>
                         <li>
-                            <input type="checkbox" name="types" id="filter-motel" checked>
+                            <input type="checkbox" name="motel" id="filter-motel" checked>
                             <label for="filter-motel">Мотель</label>
                         </li>
                         <li>
-                            <input type="checkbox" name="types" id="filter-apartment" checked>
+                            <input type="checkbox" name="apartment" id="filter-apartment" checked>
                             <label for="filter-apartment">Апартаменты</label>
                         </li>
                     </ul>
                 </fieldset>
                 <fieldset>
                     <legend>Стоимость в сутки (Р):</legend>
-                    <label>от<input type="number" min="0" max="3000" value="0"></label>
-                    <label>до<input type="number" min="0" max="3000" value="3000"></label>
+                    <label>от<input type="number" name="min-price" min="0" max="3000" value="0"></label>
+                    <label>до<input type="number" name="max-price" min="0" max="3000" value="3000"></label>
                     <!-- Кнопки от и до -->
                     <button type="button"></button>
                     <button type="button"></button>
