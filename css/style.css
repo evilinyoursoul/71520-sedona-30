@@ -1,0 +1,181 @@
+@font-face {
+  font-family: "PT Sans";
+  src: local("PT Sans"),
+  url("../fonts/PTSans.woff2") format("woff2"),
+  url("../fonts/PTSans.woff2") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: local("PT Sans Bold"),
+  url("../fonts/PTSans-Bold.woff2") format("woff2"),
+  url("../fonts/PTSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-white: #FFFFFF;
+  --basic-text: #333333;
+  --basic-light: #81B3D2;
+  --basic-disabled: #6A6A6A;
+  --basic-neutral: #EEEEEE;
+  --button-light-hover: #669EC0;
+  --button-light-active: #5496BD;
+  --basic-dark: #766357;
+  --button-dark-hover: #604E43;
+  --button-dark-active: #503E33;
+  --basic-extra-dark: #231F20;
+  --basic-extra-light: #BDBBBC;
+  --basic-icon: #A9A9A9;
+  --search-input: #F2F2F2;
+  --search-input-hover: #EBEBEB;
+  --search-input-focus: #E5E5E5;
+  --range-dark: #ABABAB;
+  --sort-button: #CACACA;
+  --rating-text: #666666;
+}
+
+
+/* Global */
+
+.page-body {
+  min-width: 1200px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--basic-text);
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+/* Main navigation */
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover {
+  color: var(--basic-light);
+}
+
+.site-navigation a:focus {
+  color: var(--basic-black);
+  opacity: 30%;
+}
+
+/* Welcome */
+
+h1 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+.welcome p {
+  line-height: 26px;
+}
+
+/* Reasons */
+
+h2 {
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+.reasons-list, .advantages-list {
+  list-style: none;
+}
+
+.reason-item-big {
+  color: var(--basic-white);
+  background-color: var(--basic-light);
+}
+
+.reason-item-big h2 {
+  color: var(--basic-white);
+}
+
+.reason-item-small {
+  background-color: var(--basic-neutral);
+}
+
+/* Interest */
+
+.interest {
+  line-height: 24px;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+/* Footer */
+
+.main-footer {
+  background-color: var(--basic-white);
+  opacity: 90%;
+}
+
+.contacts {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+.contacts a {
+  color: var(--basic-black);
+}
+
+.social-networks ul {
+  list-style: none;
+}
+
+.social-button {
+  background-color: var(--basic-light);
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: var(--button-light-hover);
+}
+
+.social-button:active {
+  background-color: var(--button-light-active);
+}
+
+
+.copyright {
+  line-height: 26px;
+  color: var(--basic-black);
+}
