@@ -80,11 +80,12 @@ img {
   color: var(--basic-black);
 }
 
-.site-navigation a:hover {
+.site-navigation a:hover,
+.site-navigation a:focus {
   color: var(--basic-light);
 }
 
-.site-navigation a:focus {
+.site-navigation a:active {
   color: var(--basic-black);
   opacity: 30%;
 }
@@ -137,6 +138,35 @@ h3 {
   font-size: 30px;
   font-weight: 700;
   color: var(--basic-black);
+}
+
+.button {
+  font: inherit;
+  color: var(--basic-white);
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+}
+
+.button-dark {
+  font-size: 21px;
+  line-height: 26px;
+  background-color: var(--basic-dark);
+}
+
+.button-dark:hover,
+.button-dark:focus {
+  background-color: var(--button-dark-hover);
+}
+
+.button-dark:active {
+  background-color: var(--button-dark-active);
+}
+
+.button-dark:active span {
+  opacity: 30%;
 }
 
 /* Footer */
