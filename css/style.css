@@ -33,12 +33,13 @@
   --basic-extra-dark: #231F20;
   --basic-extra-light: #BDBBBC;
   --basic-icon: #A9A9A9;
-  --search-input: #F2F2F2;
+  --input-background: #F2F2F2;
   --search-input-hover: #EBEBEB;
   --search-input-focus: #E5E5E5;
   --range-dark: #ABABAB;
   --sort-button: #CACACA;
   --rating-text: #666666;
+  --rgb-basic-black: 0, 0, 0;
 }
 
 
@@ -150,9 +151,12 @@ h3 {
   border: none;
 }
 
-.button-dark {
+.button-big {
   font-size: 21px;
   line-height: 26px;
+}
+
+.button-dark {
   background-color: var(--basic-dark);
 }
 
@@ -168,6 +172,32 @@ h3 {
 .button-dark:active span {
   opacity: 30%;
 }
+
+.button-light {
+  background: var(--basic-light);
+}
+
+.button-light:hover,
+.button-light:focus {
+  background-color: var(--button-light-hover);
+}
+
+.button-light:active {
+  background-color: var(--button-light-active);
+}
+
+.button-light:active span {
+  opacity: 30%;
+}
+
+.button-filter {
+  font-weight: 400;
+  background-color: transparent;
+  border: 2px solid var(--basic-white);
+  border-radius: 2px;
+}
+
+
 
 /* Footer */
 
@@ -208,4 +238,90 @@ h3 {
 .copyright {
   line-height: 26px;
   color: var(--basic-black);
+}
+
+/* Filter */
+
+.filter {
+  color: var(--basic-white);
+  background-color: var(--basic-extra-light);
+}
+
+.filter-list {
+  list-style: none;
+}
+
+.filter legend {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.filter-form fieldset {
+  border-style: none;
+}
+
+
+
+/* Search result */
+
+.search-results .title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.search-results {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort-list {
+  list-style: none;
+}
+
+.sort-item a.active {
+  color: var(--basic-light);
+  border-bottom-color: transparent;
+}
+
+.sort-item a {
+  color: rgba(var(--rgb-basic-black), 0.3);
+  border-bottom: 1px dotted var(--basic-light);
+}
+
+.sort-item a:hover,
+.sort-item a:focus {
+  color: var(---basic-light);
+}
+
+.sort a:active {
+  color: var(--basic-black);
+  border-bottom-color: transparent;
+}
+
+.order-list {
+  list-style: none;
+}
+
+.results-list {
+  list-style: none;
+}
+
+a.title {
+  color: var(--basic-black);
+}
+
+a.title:hover,
+a.title:focus {
+  color: var(--basic-light);
+}
+
+a.title:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.rating {
+  color: var(--rating-text);
+  background-color: var(--input-background);
 }
