@@ -79,6 +79,19 @@ img {
   height: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* Main navigation */
 
 /* .main-header .container {
@@ -109,10 +122,25 @@ img {
 }
 
 .main-header-logo {
-  justify-self: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* Welcome */
+
+.background {
+  background-color: var(--basic-neutral);
+  padding: 77px 0 81px;
+  background-image: url(../img/background-photo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.welcome {
+  min-height: 215px;
+}
 
 h1 {
   font-size: 21px;
@@ -148,11 +176,17 @@ h1 {
   padding: 0;
   margin: 0;
   text-align: center;
+  background-color: var(--basic-white);
 }
 
-.reason-item, .advantage-item {
+.reason-item {
   width: 400px;
-  height: 256px;
+  min-height: 256px;
+}
+
+.advantage-item {
+  width: 400px;
+  min-height: 330px;
 }
 
 h2 {
@@ -168,22 +202,31 @@ h2 {
 }
 
 .reason-item-big {
-  color: var(--basic-white);
   background-color: var(--basic-light);
 }
 
-.reason-item-big h2 {
+h2.light-title {
   color: var(--basic-white);
 }
+
+p.light-text {
+  color: var(--basic-white);
+}
+
+
+
 
 .reason-item-small {
   background-color: var(--basic-neutral);
 }
 
+
+
 /* Interest */
 
 .interest {
   line-height: 24px;
+  min-height: 291px;
 }
 
 h3 {
@@ -258,6 +301,7 @@ h3 {
 }
 
 .main-footer {
+  min-height: 121px;
   background-color: var(--basic-white);
   opacity: 90%;
 }
@@ -283,6 +327,8 @@ h3 {
 
 .social-button {
   background-color: var(--basic-light);
+  width: 46px;
+  height: 48px;
 }
 
 .social-button:hover,
@@ -294,11 +340,11 @@ h3 {
   background-color: var(--button-light-active);
 }
 
-
 .copyright {
   line-height: 26px;
   color: var(--basic-black);
 }
+
 
 /* Filter */
 
