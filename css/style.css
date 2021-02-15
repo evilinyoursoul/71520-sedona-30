@@ -99,6 +99,10 @@ img {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 } */
 
+.main-header {
+  min-height: 57px;
+}
+
 .site-navigation {
   list-style: none;
   display: grid;
@@ -345,12 +349,16 @@ h3 {
   color: var(--basic-black);
 }
 
+/* Catalog */
+
+
 
 /* Filter */
 
 .filter {
   color: var(--basic-white);
   background-color: var(--basic-extra-light);
+  min-height: 217px;
 }
 
 .filter-list {
