@@ -107,6 +107,12 @@ img {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: left;
+}
+
+.site-navigation li:last-child,
+.site-navigation li:nth-last-child(2) {
+  text-align: right;
 }
 
 .site-navigation a {
@@ -177,6 +183,7 @@ h1 {
 .advantages-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  /* display: contents; */
   padding: 0;
   margin: 0;
   text-align: center;
@@ -302,6 +309,7 @@ h3 {
 .main-footer .container {
   display: grid;
   grid-template-columns: 1fr 400px 1fr;
+  align-items: center;
 }
 
 .main-footer {
@@ -327,12 +335,24 @@ h3 {
   grid-template-columns: repeat(3, max-content);
   text-align: center;
   column-gap: 6px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.social-networks {
+  margin: auto;
 }
 
 .social-button {
   background-color: var(--basic-light);
+  display: block;
   width: 46px;
   height: 48px;
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-button:hover,
